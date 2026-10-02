@@ -14,7 +14,7 @@ A [Claude Code](https://claude.com/claude-code) skill for running a long researc
 ## Install
 
 ```sh
-git clone https://github.com/<you>/lane-orchestration
+git clone https://github.com/PiotrTopa/lane-orchestration
 ln -s "$PWD/lane-orchestration/skills/lane-orchestration" ~/.claude/skills/lane-orchestration
 ```
 
