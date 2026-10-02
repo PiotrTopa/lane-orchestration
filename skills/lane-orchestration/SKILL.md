@@ -7,6 +7,24 @@ description: Run a long research or engineering programme as a coordinator. The 
 
 A way of working for multi-day programmes: research campaigns, large refactors, benchmark sweeps. The goal is that the user can follow the whole programme from short fold messages. The coordinator keeps a sharp, current picture of the distance to the target.
 
+## Rule zero: the main thread orchestrates, it never deep-dives
+
+The main conversation **coordinates and folds, and does nothing else**. Every piece of deep work goes to a subagent lane, including the follow-up steps a fold implies. That covers derivations, writing or debugging code, running or babysitting jobs, chasing a convention bug, long data analysis, and benchmarking.
+
+The main thread may only:
+- read lane reports;
+- spot-check a few key numbers before folding;
+- run the claim checks;
+- apply the fold and commit;
+- answer the user.
+
+If the main thread catches itself opening a fifth source file or writing a non-trivial script, it stops and writes a brief instead.
+
+**Why:**
+1. **Context hygiene.** A coordinator that digs fills its own context with detail and loses the sharp high-level view the campaign is steered from.
+2. **Anti-tunnel-vision.** One thread converges on one framing too early. Independent lanes on disjoint surfaces keep the answer honest.
+3. **Followability.** The user follows the programme from the fold messages alone.
+
 Read the programme's **profile** first (see `references/project-setup.md`). It holds the hosts, caps, model rules and paths for this repo. If there is no profile, offer to create one before dispatching the first lane.
 
 ## 1. Roles
