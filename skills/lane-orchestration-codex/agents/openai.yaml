@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lane Orchestration for Codex"
+  short_description: "Coordinate bounded lanes and evidence-aware folds"
+  default_prompt: "Use $lane-orchestration-codex to coordinate this programme through bounded subagent tasks and concise evidence-aware folds."
