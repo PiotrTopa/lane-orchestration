@@ -44,6 +44,19 @@ p.write_text(s)
 
 Then run all claims, and commit `fold <n>: <headline>`.
 
-## In the message to the user
+## In the message to the user (mandatory, every fold)
 
-Use the same FAV/UNFAV/INSTR lines, a 3–5 line picture of the roadmap, the money, and the decisions they own. Report times in the user's timezone.
+The recap message must contain these tagged lines verbatim in form, not only the notebook. Never replace them with prose.
+
+```markdown
+**Fold — <lane> — <verdict>** (<commit>)
+- [FAV] <finding> (claims) — or `[FAV] none`
+- [UNFAV] <finding> (claims) — <what it closes> — or `[UNFAV] none`
+- [INSTR] <instrument/method result or caveat> — or `[INSTR] none`
+
+**Roadmap:** 3–5 lines: what is running, what is next, distance to target.
+**Money:** spent / left (omit only if the programme has no spend).
+**Your decisions:** <pending user decisions, or none>.
+```
+
+Report times in the user's timezone.

@@ -16,4 +16,4 @@ Use the project's existing notebook or synthesis format. This is a guide, not a 
 <Only if relevant: active owners/jobs, resource state, or a user decision.>
 ```
 
-The user-facing update should convey the finding, uncertainty and next move in plain language. Link detailed evidence rather than reproducing the technical report. Do not equate task counts, passed checks or discarded sketches with progress toward an explanation.
+The user-facing update must open with explicit `[FAV]` / `[UNFAV]` / `[INSTR]` lines (write `none` for an empty tag); a recap without them is an incomplete fold. It should also convey the finding, uncertainty and next move in plain language. Link detailed evidence rather than reproducing the technical report. Do not equate task counts, passed checks or discarded sketches with progress toward an explanation.

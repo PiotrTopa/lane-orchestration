@@ -67,7 +67,9 @@ A fold is how a lane's result enters the programme record (`NOTEBOOK.md`, number
 4. **Roadmap and status to target**: what is certified, what is open, the next lanes, the user's pending decisions, money spent and left.
 5. **The deviations** of executed orders from plan.
 
-Apply edits to the notebook with an assert-unique replace script (each anchor must match exactly once). Commit each fold as its own commit. Repeat the FAV/UNFAV/INSTR lines and the picture **in the message to the user**, not only in the file.
+Apply edits to the notebook with an assert-unique replace script (each anchor must match exactly once). Commit each fold as its own commit.
+
+**Mandatory: the fold recap to the user carries the tags.** Every message that reports a fold, including short or parallel-lane folds and mathematical/exploratory lanes, must contain explicit `[FAV]`, `[UNFAV]` and `[INSTR]` lines (write `[FAV] none` if nothing moved toward the target), followed by the roadmap picture. A plain-prose recap without these tags is an incomplete fold, even when the notebook entry has them. Use the "In the message to the user" block of `templates/fold.md`.
 
 ## 5. Compute: orders, one orchestrator, one waiter
 
